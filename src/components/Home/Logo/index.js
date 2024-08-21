@@ -68,12 +68,10 @@ const Logo = () => {
         <Horizontal>
           <Text text="<h1>Hello World</h1>" delay={1.1} />
           <Text text="<h1>Hello World</h1>" delay={1.2} />
-          <Text text="<h1>Hello.." delay={1.3} />
         </Horizontal>
         <Horizontal>
           <Text text="<h1>Hello World</h1>" delay={1.4} />
           <Text text="<h1>Hello World</h1>" delay={1.5} />
-          <Text text="<h1>Hello.." delay={1.6} />
         </Horizontal>
         <Vertical>
           <Text text="<h1>Hello.." delay={1.7} />
@@ -85,11 +83,11 @@ const Logo = () => {
         </Vertical>
         <Horizontal>
           <Text text="<h1>Hello World</h1>" delay={2.3} />
-          <Text text="<h1>Hello World</h1>" delay={2.4} />
+          <Text text="<h1>Hello.." delay={2.4} />
         </Horizontal>
         <Horizontal>
           <Text text="<h1>Hello World</h1>" delay={2.5} />
-          <Text text="<h1>Hello World</h1>" delay={2.6} />
+          <Text text="<h1>Hello.." delay={2.6} />
         </Horizontal>
         <Vertical>
           <Text text="<h1>Hello.." delay={2.7} />
