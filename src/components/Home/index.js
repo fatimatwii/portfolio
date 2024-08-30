@@ -11,6 +11,14 @@ const Home = () => {
 
   const nameArray = ['a', 't', 'i', 'm', 'a'];
   const jobArray = [
+    'H',
+    'e',
+    'l',
+    'l',
+    'o',
+    ' ',
+    '&',
+    ' ',
     'W',
     'e',
     'l',
@@ -18,31 +26,6 @@ const Home = () => {
     'o',
     'm',
     'e',
-    ' ',
-    't',
-    'o',
-    ' ',
-    'M',
-    'y',
-    ' ',
-    'D',
-    'i',
-    'g',
-    'i',
-    't',
-    'a',
-    'l',
-    ' ',
-    'P',
-    'l',
-    'a',
-    'y',
-    'g',
-    'r',
-    'o',
-    'u',
-    'n',
-    'd',
     '!',
   ];
 
@@ -59,8 +42,11 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
+           <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={2}
+            />
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
@@ -74,15 +60,13 @@ const Home = () => {
               idx={15}
             />
             <br />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={3}
-            />
+
+            
           </h1>
-          
-  
+          <br />
+          <br />
+          <br />
+          <h2>Explore my creative space<br /> where innovation meets code.</h2>
           <div className="button-container">
             <Link to="/about" className="flat-button">
               ABOUT ME
