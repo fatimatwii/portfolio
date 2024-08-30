@@ -15,6 +15,7 @@ import {
   faProjectDiagram,
   faBars,
   faClose,
+  faTools,  // Import the icon for skills
 } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -44,6 +45,15 @@ const Sidebar = () => {
           to="/about"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        {/* Add Skills link below the About link */}
+        <NavLink
+          activeclassname="active"
+          className="skills-link"
+          to="/skills"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faTools} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"
