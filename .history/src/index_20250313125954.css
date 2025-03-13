@@ -24,3 +24,21 @@ body {
   }
 }@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=DM+Sans:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
 
+body {
+    font-family: 'Playfair Display', serif;
+}
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, span {
+  font-family: 'Merriweather', serif;
+}
+
+button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.navbar {
+  font-family: 'Source Sans Pro', sans-serif;
+}
