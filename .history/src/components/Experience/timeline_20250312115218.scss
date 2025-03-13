@@ -1,0 +1,72 @@
+*{
+  text-align: justify;
+}
+.timeline-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: one for the left and one for the right */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  height: 100vh; /* Full viewport height for vertical centering */
+  align-items: center; /* Vertically center the items in the grid */
+}
+
+.timeline-item {
+  display: flex;
+  margin: 20px 0;
+  
+  &.left {
+    justify-content: center; /* Center the first item horizontally */
+    align-items: center; /* Center the first item vertically */
+    margin-top: 10rem;
+  }
+
+  &.right {
+    display: flex;
+    flex-direction: column; /* Stack the second and third items vertically */
+    justify-content: flex-start;
+  }
+
+  .timeline-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure each item takes up full width within their column */
+    position: relative;
+    margin-bottom: 20px; /* Add some spacing between items */
+
+    .date {
+      font-weight: bold;
+      color: #ff6f61;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #2262b1;
+      margin-bottom: 10px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #2262b1;
+      border-radius: 50%;
+    }
+  }
+}
+
+.timeline-item.left .timeline-content:after {
+  left: -10px;
+}
+
+.timeline-item.right .timeline-content:after {
+  right: -10px;
+}
+.descriptions{
+  color: dimgray !important;
+}

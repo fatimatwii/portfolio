@@ -71,6 +71,9 @@ const Home = () => {
             <Link to="/about" className="flat-button">
               ABOUT ME
             </Link>
+            <Link to="/skills" className="flat-button">
+              MY SKILLS 
+            </Link>
             <Link to="/experience" className="flat-button">
               MY EXPERIENCE
             </Link>

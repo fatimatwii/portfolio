@@ -1,0 +1,104 @@
+* {
+  text-align: justify;
+}
+
+.timeline-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: one for the left and one for the right */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  height: 100vh; /* Full viewport height for vertical centering */
+  align-items: center; /* Vertically center the items in the grid */
+}
+
+.timeline-item {
+  display: flex;
+  margin: 20px 0;
+
+  &.left {
+    justify-content: center; /* Center the first item horizontally */
+    align-items: center; /* Center the first item vertically */
+    margin-top: 10rem;
+  }
+
+  &.right {
+    display: flex;
+    flex-direction: column; /* Stack the second and third items vertically */
+    justify-content: flex-start;
+  }
+
+  .timeline-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure each item takes up full width within their column */
+    position: relative;
+    margin-bottom: 20px; /* Add some spacing between items */
+
+    .date {
+      font-weight: bold;
+      color: #ff6f61;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #2262b1;
+      margin-bottom: 10px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #2262b1;
+      border-radius: 50%;
+    }
+  }
+}
+
+.timeline-item.left .timeline-content:after {
+  left: -10px;
+}
+
+.timeline-item.right .timeline-content:after {
+  right: -10px;
+}
+
+.descriptions {
+  color: dimgray !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .timeline-container {
+    grid-template-columns: 1fr; /* Change to single column */
+    height: auto; /* Remove full viewport height on small screens */
+  }
+
+  .timeline-item {
+    margin: 10px 0; /* Reduce margin between items */
+    width: 80%;
+    margin-top: 5rem;
+  }
+
+  .timeline-item.left {
+    justify-content: center; /* Center the left item */
+    align-items: center; /* Center the left item vertically */
+    margin-top: 0; /* Remove top margin */
+  }
+
+  .timeline-item.right {
+    display: flex;
+    flex-direction: column; /* Stack the right items vertically */
+  }
+
+  .timeline-content {
+    width: 100%; /* Ensure each content takes up full width */
+    margin-bottom: 20px; /* Space between experiences */
+  }
+}
