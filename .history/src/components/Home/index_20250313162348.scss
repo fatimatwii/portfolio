@@ -1,5 +1,5 @@
 .home-page {
-  .text-zone {
+  .text-zonee {
     position: absolute;
     left: 10%;
     top: 50% !important;
@@ -95,7 +95,7 @@ margin-left: 10%;
     margin-top: -10px;
     margin-left: 10%;
   }
-  .home-page .text-zone {
+  .home-page .text-zonee {
     position: initial;
     width: 100%;
     transform: none;
@@ -140,8 +140,3 @@ margin-left: 10%;
     font-weight: 400;
   }
 }
-@media (max-width: 768px) {
-  .home-page {
-    .text-zone {
-      width: 100% !important;
-    }}}
