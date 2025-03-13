@@ -3,7 +3,7 @@
   padding: 20px;
   width: 75%;
   margin-left: 10%;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-bottom: 5%;
   margin-top: 8%;
     box-sizing: border-box;
@@ -14,7 +14,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); // Two columns
   gap: 20px;
-  margin-top: 8%;
 
   .project-btn {
     display: inline-block;
