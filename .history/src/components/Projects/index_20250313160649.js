@@ -29,13 +29,12 @@ const Projects = () => {
       title: "Medical Center Booking System",
       description: "Developed the doctor’s side, managing availability, appointments, and patient feedback.",
       tech: "PHP, MySQL, AJAX, Bootstrap",
-      video: "/videos/doctor.mp4",
     },
     {
       title: "Task Management & To-Do List System",
       description: "A task management system that streamlines organization and productivity. My first large-scale PHP project where I learned a lot about structuring code.",
       tech: "PHP, MySQL",
-      pdf: "/files/TASK MASTER..pdf",
+      pdf: "/files/task_management_details.pdf",
     },
   ];
   return (
